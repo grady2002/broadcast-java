@@ -30,8 +30,7 @@ class Sender {
         try {
             clear();
             Scanner s = new Scanner(System.in);
-            System.out.print("Broadcast message system CA-2\n");
-            System.out.print("Aatif Mastan 6741\n\n");
+            System.out.print("Broadcast message system\n\n");
             System.out.print("Sender ? ");
             String from = s.nextLine();
             System.out.print("Short 1 line Message ? ");
