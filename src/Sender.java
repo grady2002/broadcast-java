@@ -15,7 +15,7 @@ class Sender {
     void sendBroadcast(String from, String message) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            var conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java",
+            var conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/broadcast",
                     "root", "");
             Statement s = conn.createStatement();
             s.executeUpdate("truncate table main");
