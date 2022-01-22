@@ -5,7 +5,11 @@ import java.sql.*;
 class Reciever {
     void clear() {
         try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            if (System.getProperty("os.name").contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                new ProcessBuilder("cmd", "/c", "clear").inheritIO().start().waitFor();
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
