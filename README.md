@@ -8,6 +8,8 @@ This is a simple broadcast application made in Java using MySQL as the database 
 - CREATE TABLE main (id INT AUTO_INCREMENT PRIMARY KEY, sender VARCHAR(20), broadcast VARCHAR(255));
 - INSERT INTO main (sender, broadcast) VALUES ('admin', 'Welcome to the broadcast application!');
 
+Execute the queries in the MySQL console or simply upload the `main.sql` file to the MySQL admin panel.
+
 ## Executing the application
 
 Run the respective executable files for each of the applications.
